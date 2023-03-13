@@ -14,7 +14,7 @@ web3.eth.subscribe('newBlockHeaders', function (error, result) {})
 // manage coingecko free API rate limit
 let ethRateLimit = false;
 let rateLimit = function(){
-  ethRateLimit = !ethRateLimit
+  ethRateLimit = false;
 };
 setInterval(rateLimit, 20000);
 
